@@ -158,6 +158,9 @@ li {
 #home{
     margin-top: 100px;
 }
+#home a{
+    text-decoration: underline;
+}
 #about, #education, #projects{
     display: flex;
     justify-content: center;
@@ -218,6 +221,10 @@ li {
     height: 400px;
     gap:20px;
     border-radius: 20px;
+    padding: 10px;
+}
+.projectsCards .project a{
+    text-align: center;
 }
 .projectsCards .project:hover, .edu:hover{
     transform: scale(1.04);
@@ -253,15 +260,18 @@ li {
 }
 
 @media screen and (max-width:800px) {
-    nav .container{
+    .container {
+        width: 90%;
+    }
+    .homePage nav .container{
         justify-content: flex-end;
         width: 100%;
     }
-    nav .container ul{
+    .homePage nav .container ul{
         display: none;
     }
 
-    nav .burger {
+    .homePage nav .burger {
         display: contents;
     }
 
@@ -289,7 +299,6 @@ li {
     .main .info img{
         width:100px;
     }
-    
     .projectsCards .project img{
         width: 100%;
         border-radius: 20px;
