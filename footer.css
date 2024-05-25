@@ -1,0 +1,26 @@
+.footer{
+    width:100%;
+    background-color: var(--color2);
+    display: grid;
+    justify-content: center;
+    padding:20px;
+    margin-top: 100px;
+}
+
+.footer .container {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.footer p{
+    text-align: center;
+    grid-area: 1/2;
+}
+#contact{
+    grid-area: 2/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+}

@@ -1,0 +1,93 @@
+nav .burger {
+    display: none;
+}
+nav .container .nav_burger ul{
+    border: 2px solid #FFF;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav .container .nav_burger svg{
+    width:50px;
+}
+nav .container .nav_burger svg:hover{
+    transform: scale(1.1);
+}
+nav .container .burger:hover .nav_burger ul{
+    opacity: 1;
+}
+
+nav .container .burger .nav_burger ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--color3);
+    border-radius: 12px;
+    right: 0;
+    top: 80px;
+    width: calc(100% / 4);
+
+}
+
+nav .container .burger .nav_burger ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7F7F8;
+    width: 100%;
+}
+
+nav .container .burger .nav_burger ul li a {
+    font-size: 16px;
+    color: #F1F1F3;
+    padding: 10px;
+    width: 100%;
+    border-top:2px solid #FFF;
+    border-bottom:2px solid #FFF;
+    text-align: center;
+    border-radius: 0px;
+}
+nav .container .burger .nav_burger ul li:first-of-type a{
+    border-top:0px;
+}
+nav .container .burger .nav_burger ul li:last-of-type a{
+    border-bottom:0px;
+}
+nav .container .burger a:hover .burger .nav_burger{
+    display:none;   
+}
+nav .container .burger a:hover{
+    background-color: var(--color4);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #cedfd9e2;
+    box-shadow: 10px 5px 5px 5px #b0939841;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+nav .container ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+nav li:hover{
+    transform: scale(1.2);
+}
+li {
+    text-decoration: none;
+    text-transform: capitalize;
+}
